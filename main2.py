@@ -31,7 +31,7 @@ class restaurantordermanagement:
         bgwidth,bgheight=800,600
         canvas=tk.Canvas(root,width=bgwidth,height=bgheight)
         canvas.pack()
-        originalimage=tk.PhotoImage(file="food.jpeg")
+        originalimage=tk.PhotoImage(file="food")
         backgroundimage=originalimage.subsample(originalimage.width()//bgwidth,originalimage.height()//bgheight)
         canvas.create_image(0,0,anchor=tk.NW,image=backgroundimage)
         def updatemenuprices(self,*args):
@@ -66,7 +66,3 @@ if __name__=="__main__":
     app=restaurantordermanagement(root)
     root.geometry("800x600")
     root.mainloop()
-            
-
-
-
